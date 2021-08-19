@@ -1,0 +1,28 @@
+{
+  "name": "poc-next-amp-tw",
+  "version": "0.1.0",
+  "private": true,
+  "watch": {
+    "build-css": "{pages,styles}/*.js"
+  },
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "build-css": "CSS_ENV=build postcss styles/index.css --config postcss.config.js -o styles/output.css",
+    "start": "next start",
+    "watch": "npm-watch",
+    "analyze": "ANALYZE=true next build"
+  },
+  "dependencies": {
+    "next": "11.0.1",
+    "next-pwa": "^5.3.1",
+    "react": "17.0.2",
+    "react-dom": "17.0.2"
+  },
+  "devDependencies": {
+    "@next/bundle-analyzer": "^11.1.0",
+    "autoprefixer": "^10.3.1",
+    "postcss": "^8.3.6",
+    "tailwindcss": "^2.2.7"
+  }
+}
